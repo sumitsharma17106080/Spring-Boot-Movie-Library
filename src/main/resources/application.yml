@@ -1,0 +1,38 @@
+server:
+  port: 8181
+  servlet:
+    context-path: /movflix
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  info:
+    env:
+      enabled: true
+      
+info:
+  app:
+    name: MovFlix
+    version: 0.0.1
+    description: Project For Movie Library
+    author: Sumit Sharma
+    
+spring:
+  h2:
+    console:
+      path : /h2-console
+      enabled: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:movflix
+    username: user
+    password: pass
+  jpa:
+    hibernate:
+      ddl-auto: crate
+      
+      
+
+    

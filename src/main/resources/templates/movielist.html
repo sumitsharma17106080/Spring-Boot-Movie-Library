@@ -1,0 +1,32 @@
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<style>
+.Class1{
+width:50% ;
+border: 2px solid;
+margin: auto;
+align-self: auto;
+color: green;
+}
+</style>
+</head>
+<body>
+<div class="Class1">
+<table>
+<tr><th> Movie Id</th> <th> Movie Name</th> <th> Movie Collection</th></tr>
+<tr th:each=" movie:${movieList}">
+<td><span th:text="${movie.movie_id}"></span></td>
+<td><span th:text="${movie.movieName}"></span></td>
+<td><span th:text="${movie.collection}"></span></td>
+</tr>
+</table>
+</div>
+<button><a href="/movflix">HOME</a></button>
+<button onclick="back();"> Back</button>
+</body>
+</html>
+<script>
+function back(){
+	window.history.back();
+}
+</script>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+.Class1{
+width:50% ;
+border: 2px solid;
+margin: auto;
+align-self: auto;
+color: black;
+background: green;
+}
+</style>
+</head>
+<body>
+<div class="Class1">
+<h2>Message :<span th:text="${message}"></span></h2>
+<button><a href="/movflix">HOME</a></button>
+<button onclick="back();">Back</button>
+</div>
+</body>
+</html>
+<script>
+function back(){
+	window.history.back();
+}
+</script>

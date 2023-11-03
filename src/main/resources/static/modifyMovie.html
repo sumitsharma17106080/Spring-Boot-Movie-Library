@@ -1,0 +1,42 @@
+<html>
+<head>
+<style>
+.Class1{
+width:50% ;
+border: 2px solid;
+margin: auto;
+align-self: auto;
+color: green;
+}
+</style>
+</head>
+<body>
+<div class="Class1">
+<h1>Welcome To Modify - Movie</h1>
+<form  action="modifyMovie"  method="post">
+<table>
+<tr>
+<td>Enter Movie Id</td>
+<td><input type="number" name="movie_id" placeholder="Movie Id"/></td>
+</tr>
+<tr>
+<td>Enter Movie Name</td>
+<td><input type="text" name="movieName" placeholder="Movie Name"/></td>
+</tr>
+<tr>
+<td>Enter Movie Collection</td>
+<td><input type="number" name="collection" placeholder="Movie Collection"/></td>
+</tr>
+<tr><td> <input type="submit" /></td></tr>
+</table>
+</form>
+</div>
+<button><a href="/movflix">HOME</a></button>
+<button onclick="back();">Back</button>
+</body>
+</html>
+<script>
+function back(){
+	window.history.back();
+}
+</script>
